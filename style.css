@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(240, 231, 245);
+}
+
+hr {
+    border: none; 
+    border-top: 2px solid rgb(87, 15, 188); 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+#produtos hr {
+    width: 60%; 
+}
+
+h2 {
+   color: rgb(87, 15, 188); 
+}
+
+#produtos h2,
+#produtos ul {
+    display: flex;
+    justify-content: center;
+}
+
+#produtos li {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#produtos li img {
+    max-width: 100%;
+    height: 50%; 
+}
+#produtos ul {
+    flex-wrap: wrap;
+    gap: 2.5%;
+    list-style: none;
+}
+
+#produtos li button {
+    display: block;
+    padding: 8px;
+    border: none;
+    background-color: rgb(60, 227, 23);
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    width: 80%;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+#sobre ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center ;
+}
+
+#sobre li {
+    max-width: 80%;
+    margin: 20px;
+}
+
+#sobre li h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#sobre img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+header {
+    background-color: rgb(87, 15, 188);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    border: 20px solid rgb(61, 7, 135);
+    
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(87, 15, 188);
+    padding: 10px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px)  {
+    #produtos li {
+        max-width: 45%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #produtos li {
+        max-width: 22%;
+        margin: 0;
+    }
+
+    #sobre li {
+        max-width: 40%;
+    }
+
+    #sobre li h2 {
+        justify-content: flex-start;
+    }
+
+}
+
